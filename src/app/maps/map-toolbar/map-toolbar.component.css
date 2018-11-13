@@ -1,0 +1,15 @@
+.md-checkbox.md-checked ._md-icon {
+    background-color: white important;
+}
+
+.button-toolbar button {
+    min-width: 26px !important;
+}
+
+section.example-section.button-toolbar {
+    float: right;
+    top: 300px;
+    position: absolute;
+    z-index: 9999;
+    right: 30px;
+}

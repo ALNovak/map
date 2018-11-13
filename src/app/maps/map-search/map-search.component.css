@@ -1,0 +1,17 @@
+.example-option-img {
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  .mat-form-field {
+    width: 300px;
+  }
+  .mat-option {  
+    line-height: 28px;
+    height: 38px;
+    
+}
+.mat-option {
+    font-family: Roboto;
+    font-size: 16px;
+}
+  

@@ -1,0 +1,21 @@
+export enum EventType {
+    click = 'click',
+    rightClick = 'rightclick',
+    dblClick = 'dblclick',
+    drag = 'drag',
+    dragEnd = 'dragend',
+    mouseMove = 'mousemove',
+    mouseOut = 'mouseout',
+    mouseDown = 'mousedown',
+    mouseUp = 'mouseup',
+    projectionChanged = 'projection_changed',
+    zoomChanged = 'zoom_changed',
+    headingChanged = 'heading_changed',
+    idle = 'idle',
+    tilesLoaded = 'tilesloaded',
+    centerChanged = 'center_changed',
+    boundsChanged = 'bounds_changed', 
+    radiusChanged ='radius_changed', 
+    resize = 'resize',
+    
+}

@@ -30,7 +30,8 @@ export class GoogleMarkerCluster extends AbstractMarkerCluster {
                     width: 44
                 }]
         };
-        this.googleCluster = new MarkerClusterer(this.map.api, [], mcOptions);
+        //G:\MapTest-St\stackblitz2\src\assets
+        this.googleCluster = new MarkerClusterer.default(this.map.api, [], mcOptions);
     }
 
     addMarker(marker: BaseMarker, redraw?: boolean): void {

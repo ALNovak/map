@@ -53,6 +53,10 @@ import { H21MapsComponent } from "../app/docs/maps/h21-maps/h21-maps.component";
 
 ```
 
+#### `Просмотр модуля Stackblitz:`
+```javascript
+https://stackblitz.com/github/ALNovak/map
+```
 #### `Настройки по умолчанию:`
 `Координаты центра карты:`
 

@@ -7,7 +7,7 @@ import { GoogleMarkerOptions } from './entity/google-marker-options';
 import { Injectable } from '@angular/core';
 import { IEventClickMap } from './interfaces/i-event-clik-map';
 import { ILatLng } from '../../providers/google/interfaces/i-latlng';
-import { ResponseStatus } from './enum/e-status-response ';
+import { ResponseStatus } from './enum/e-status-response';
 import { Position } from '../../entity/position';
 import { ILatLngBounds } from './interfaces/i-latln-bounds';
 import { Point } from '../../entity/point';

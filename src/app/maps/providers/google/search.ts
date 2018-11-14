@@ -1,7 +1,7 @@
 import { AbstractSearch } from "../../abstract/abstract-search";
 import { Injectable } from "@angular/core";
 import { IPoint } from "../../interfaces/i-point";
-import { ResponseStatus } from "./enum/e-status-response ";
+import { ResponseStatus } from "./enum/e-status-response";
 import { Point } from "../../entity/point";
 import { Position } from "../../entity/position";
 import { Address } from "../../classes/address";

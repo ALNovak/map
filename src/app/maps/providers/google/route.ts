@@ -3,7 +3,7 @@ import { RouteInfo } from "../../classes/route-info";
 import { RouteTextValue } from "../../classes/route-text-value";
 import { Observable, Observer } from "rxjs";
 import { TypeRoute } from "../../enum/e-type-route";
-import { ResponseStatus } from "../baidu/enum/e-status-response ";
+import { ResponseStatus } from "./enum/e-status-response";
 
 declare var google;
 

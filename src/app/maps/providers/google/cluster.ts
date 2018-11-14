@@ -24,7 +24,7 @@ export class GoogleMarkerCluster extends AbstractMarkerCluster {
             styles: [
                 {
                     textColor: 'black',
-                    url: './assets/icons_map/icon_pointgroup.png',
+                    url: 'https://github.com/ALNovak/maps-icons/blob/master/icon_pointgroup.png',
                     anchorText: [0, -2],
                     height: 44,
                     width: 44

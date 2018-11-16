@@ -10,6 +10,7 @@ import { Position } from '../entity/position';
 import { CallbackCicleInfo } from '../classes/callback-cicle-radius';
 import { CallbackMarkerInfo } from '../classes/callback-marker';
 import { RouteInfo } from '../classes/route-info';
+import { Point } from '../providers/leaflet/interfaces/i-inner';
 
 
 @Component({
@@ -40,6 +41,8 @@ export class H21MapsComponent implements OnInit {
     @Output() geocoderAddressResult: Subject<IPoint> = new Subject<IPoint>();
     @Output() detailsAddressResultPoint: Subject<IPoint> = new Subject<IPoint>();
     @Output() markerClik: Subject<IPosition> = new Subject<IPosition>();
+    @Output() markerMouseOver: Subject<IPoint> = new Subject<IPoint>();
+    @Output() markerMouseOut: Subject<IPoint> = new Subject<IPoint>();
     @Output() markerDraggable: Subject<CallbackMarkerInfo> = new Subject<CallbackMarkerInfo>();
     @Output() markerDraggableEnd: Subject<CallbackMarkerInfo> = new Subject<CallbackMarkerInfo>();
     @Output() drawRadiusStart: Subject<CallbackCicleInfo> = new Subject<CallbackCicleInfo>();
@@ -121,6 +124,12 @@ export class H21MapsComponent implements OnInit {
 
             this.manager.getActiveMap().callbackMap.on(CallbackName.markerClick, (pointId) => {
                 this.markerClik.next(pointId);
+            });
+            this.manager.getActiveMap().callbackMap.on(CallbackName.markerMouseOver, (point) => {
+                this.markerMouseOver.next(point);
+            });
+            this.manager.getActiveMap().callbackMap.on(CallbackName.markerMouseOut, (point) => {
+                this.markerMouseOut.next(point);
             });
             this.manager.getActiveMap().callbackMap.on(CallbackName.markerDraggableEnd, (infoMarker) => {
                 this.markerDraggableEnd.next(infoMarker);

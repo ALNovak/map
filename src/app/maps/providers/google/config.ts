@@ -489,23 +489,30 @@ export class GoogleConfig extends AbstractConfig {
 				position: this.generateCoordinates(point.position),
 				icon: {
 					title: point.name,
-					url: './assets/icons_map/icon_flag.png'
+					url: './assets/icons-map/flag.png'
 				},
 				zIndex: 1,
 
 			};
 
 			let marker = new google.maps.Marker(googleMarkerOptions);
+			
+			marker["point"] = point;
+
 			google.maps.event.addListener(marker, EventType.click, () => {
 				let position = this.getPosition(this.map.selectedMarker);
 				this.map.callbackMap.emit(CallbackName.markerClick, position);
+			});
+			google.maps.event.addListener(marker, EventType.mouseOver, () => {
+				this.map.callbackMap.emit(CallbackName.markerMouseOver, marker.point);
+			});
+			google.maps.event.addListener(marker, EventType.mouseOut, () => {
+				this.map.callbackMap.emit(CallbackName.markerMouseOut, marker.point);
 			});
 
 			if (onSelectedPoint) {
 				this.map.selectedMarker = marker;
 			}
-
-			marker["point"] = point;
 
 			if (this.map.cluster.googleCluster != null) {
 				this.map.geo.pushMarkers(marker)

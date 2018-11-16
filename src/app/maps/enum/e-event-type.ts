@@ -5,6 +5,7 @@ export enum EventType {
     drag = 'drag',
     dragEnd = 'dragend',
     mouseMove = 'mousemove',
+    mouseOver = 'mouseover',
     mouseOut = 'mouseout',
     mouseDown = 'mousedown',
     mouseUp = 'mouseup',

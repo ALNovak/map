@@ -17,6 +17,8 @@ export enum CallbackName {
     drawAreaDragEnd = 'drawAreaDragEnd',
     countLoadMarkers = 'countLoadMarkers', 
     markerClick ='markerClick', 
+    markerMouseOver ='markermouseover',
+    markerMouseOut ='markermouseout',
     markerDraggableEnd = 'markerDraggableEnd',
     markerDraggable = 'markerDraggable',
     infoRoute = 'infoRoute',

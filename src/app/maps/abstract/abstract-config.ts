@@ -354,7 +354,7 @@ buildRoute(from: IPoint, to: IPoint, typeRoute: TypeRoute, show?: boolean): void
         return new BaseMarker({
             title: point.title,
             icon: {
-                url: './assets/icons_map/icon_hotel.png',
+                url: './assets/icons-map/hotel.png',
                 title: ''
             },
             clickable: true,
